@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NordBridge — Careers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>NordBridge</h1>
+      <p>Connecting talent with purpose across Europe.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#roles">Open Roles</a>
+        <a href="#apply">Apply</a>
+      </nav>
+    </header>
+
+    <section>
+      <img
+        src="officeImage.png"
+        alt="A modern open office with three rows of desks on the left and a glass-walled conference room on the right"
+        width="100%"
+        style="border-radius: 4px"
+      />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Since 2018, NordBridge has helped over 200 companies find the right
+        people. We work across 18 countries, spanning technology, finance,
+        healthcare, and the creative industries. Our team of specialist
+        recruiters focuses on long-term fit rather than quick placements — we
+        stay involved long after the offer letter is signed.
+      </p>
+
+      <p>
+        We believe that hiring is one of the most important decisions a company
+        makes. That is why we take the time to understand not just the role, but
+        the team, the culture, and the direction the company is heading. Every
+        candidate we work with gets the same level of attention — we do not
+        believe in sending out bulk applications or treating people as numbers.
+      </p>
+
+      <p>
+        Over the past seven years we have refined a process that works. It
+        starts with a deep discovery call, moves into a carefully curated
+        shortlist, and ends with structured onboarding support for both the
+        candidate and the hiring manager. Our 92% one-year retention rate speaks
+        for itself.
+      </p>
+
+      <p class="low-contrast">
+        NordBridge is a registered recruiting agency headquartered in Vienna,
+        Austria. All placements are subject to our standard terms and
+        conditions. For partnership enquiries please contact our business
+        development team directly.
+      </p>
+    </section>
+
+    <!-- OPEN ROLES -->
+    <section id="roles">
+      <h2>Open Roles</h2>
+
+      <div class="role">
+        <h3>Senior Frontend Developer</h3>
+        <p>Engineering · Berlin · Full-time · €75–95k</p>
+        <div class="role-btn" onclick="openModal('frontend')">Learn More</div>
+      </div>
+
+      <div class="role">
+        <h3>UX Research Lead</h3>
+        <p>Design · Amsterdam · Hybrid · €65–80k</p>
+        <div class="role-btn" onclick="openModal('ux')">Learn More</div>
+      </div>
+
+      <div class="role">
+        <h3>Product Manager</h3>
+        <p>Product · Remote · Full-time · €70–90k</p>
+        <div class="role-btn" onclick="openModal('pm')">Learn More</div>
+      </div>
+    </section>
+
+    <!-- APPLY FORM -->
+    <section id="apply">
+      <h2>Apply</h2>
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Jane Smith" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="jane@example.com" />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="role-interest"
+            placeholder="Role you are interested in"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Cover Message</label>
+          <textarea
+            id="message"
+            placeholder="Tell us why you'd be a great fit..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Application</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 NordBridge Recruiting GmbH · Vienna, Austria</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-body"></p>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

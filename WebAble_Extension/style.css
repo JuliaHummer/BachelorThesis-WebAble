@@ -1,0 +1,197 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  background-color: #e5dbc4;
+  margin: 0;
+}
+
+body {
+  width: 28rem;
+  min-height: 32rem;
+  padding: 3%;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0.25rem 0 0.4rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 1rem 0 0.25rem;
+  color: #3d3730;
+}
+
+body > p {
+  width: 90%;
+}
+
+button {
+  font-weight: bold;
+}
+
+.accordion {
+  background-color: #e5dbc4;
+  color: #3d3730; 
+  cursor: pointer;
+  padding: 5%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+  border-bottom: 0.5px solid #c8bfab; 
+}
+
+.active, .accordion:hover {
+  background-color: #d4c9b0;
+}
+
+.accordion:focus-visible { 
+  outline: 2px solid #8a7d60;
+  outline-offset: -2px;
+}
+
+.accordion:after {
+  content: "\25BC";
+  color: #8a7d60; 
+  font-weight: bold;
+  float: right;
+  margin-left: 2%;
+}
+
+.active:after {
+  content: "\25B2";
+}
+
+.panel {
+  padding: 0 1.1rem 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel ul {
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+
+.panel li {
+  margin-bottom: 0.3rem;
+}
+
+.panel li > p {
+  margin: 0.2rem 0;
+}
+
+.code-block {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 12px 0;
+  border: 1px solid #333;
+}
+
+.code-header {
+  background-color: #2d2d2d;
+  color: #ccc;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  font-family: sans-serif;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-btn {
+  background: none;
+  border: 1px solid #666;
+  color: #ccc;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.copy-btn:hover {
+  background-color: #444;
+}
+
+.code-block pre {
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.sources {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #c8bfab;
+}
+
+.sources ul {
+  padding-left: 1.2rem;
+  margin: 0.25rem 0;
+}
+
+.sources a {
+  color: #5a4e38;
+  word-break: break-all;
+  font-size: 0.85rem;
+}
+
+.sources a:hover {
+  color: #3d3730;
+}
+
+.other-sources {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0 0.5rem;
+  border-top: 1px solid #c8bfab;
+}
+
+.other-sources h2 {
+  margin: 0 0 0.4rem;
+}
+
+.other-sources ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.other-sources li {
+  margin-bottom: 0.3rem;
+}
+
+.other-sources a {
+  color: #5a4e38;
+  word-break: break-all;
+  font-size: 0.85rem;
+}
+
+.other-sources a:hover {
+  color: #3d3730;
+}
