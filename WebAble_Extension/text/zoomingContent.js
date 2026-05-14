@@ -28,7 +28,7 @@ export const zoomingContent = {
       type: "code",
       language: "css",
       content: `.container {
-max-width: 100%;
+  max-width: 100%;
 }`,
     },
     {
@@ -39,7 +39,7 @@ max-width: 100%;
           title: "Fixed width layouts (content overflows when zoomed)",
           language: "css",
           code: `.container {
-width: 1200px;
+  width: 1200px;
 }`,
         },
         {

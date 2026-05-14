@@ -28,8 +28,8 @@ export const focusIndicators = {
       type: "code",
       language: "css",
       content: `button:focus {
-outline: 3px solid #000;
-outline-offset: 2px;
+  outline: 3px solid #000;
+  outline-offset: 2px;
 }`,
     },
     {
@@ -40,7 +40,7 @@ outline-offset: 2px;
           title: "Removing focus styles",
           language: "css",
           code: `:focus {
-outline: none;
+  outline: none;
 }`,
         },
         {

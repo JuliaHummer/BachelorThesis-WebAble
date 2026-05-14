@@ -30,7 +30,7 @@ export const errorMessages = {
       type: "code",
       language: "html",
       content: `<label for="email">Email</label>
-<input id="email" type="email" aria-describedby="email-error">
+<input id="email" type="email" aria-describedby="email-error" aria-invalid="true">
 
 <span id="email-error">
   Please enter a valid email address.

@@ -28,7 +28,11 @@
       heading: "Code example",
       type: "code",
       language: "html",
-      content: `<div role="button" tabindex="0">Menu</div>`,
+      content: `<div role="button" tabindex="0"
+  onclick="handleClick()"
+  onkeydown="if(event.key==='Enter'||event.key===' '){handleClick()}">
+  Menu
+</div>`,
     },
     {
       heading: "Common mistakes",

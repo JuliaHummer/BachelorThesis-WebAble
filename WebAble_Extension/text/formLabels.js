@@ -27,7 +27,7 @@ export const formLabels = {
         heading: "Code example",
         type: "code",
         language: "html",
-        content: ` <label for="email">Email:</label>
+        content: `<label for="email">Email:</label>
 <input id="email" type="email">`
     },
     {

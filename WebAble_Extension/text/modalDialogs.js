@@ -34,7 +34,8 @@ export const modalDialogs = {
       language: "html",
       content: `<button id="open">Open modal</button>
 
-<div role="dialog" aria-modal="true">
+<div role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1">
+  <h2 id="dialog-title">Dialog Title</h2>
   <button>Close</button>
   <p>Modal content</p>
 </div>

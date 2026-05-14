@@ -13,7 +13,7 @@ html, body {
 body {
   width: 28rem;
   min-height: 32rem;
-  padding: 3%;
+  padding: 5%;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 1rem 0 0.25rem;
   color: #3d3730;

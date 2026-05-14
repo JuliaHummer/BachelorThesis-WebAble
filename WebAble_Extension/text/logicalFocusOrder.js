@@ -25,27 +25,18 @@ export const logicalFocusOrder = {
     {
       heading: "Code example",
       type: "text",
-      content: "Good: natural DOM order",
+      content: "Natural DOM order",
     },
     {
       type: "code",
       language: "html",
       content: `<form>
-  <input type="text" placeholder="Name">
-  <input type="email" placeholder="Email">
+  <label for="name">Name</label>
+  <input id="name" type="text">
+  <label for="email">Email</label>
+  <input id="email" type="email">
   <button>Submit</button>
 </form>`,
-    },
-    {
-      type: "text",
-      content: "Bad: broken focus order",
-    },
-    {
-      type: "code",
-      language: "html",
-      content: `<input type="text" tabindex="3">
-<input type="email" tabindex="1">
-<button tabindex="2">Submit</button>`,
     },
     {
       heading: "Common mistakes",
@@ -53,6 +44,11 @@ export const logicalFocusOrder = {
       items: [
         {
           title: "Using tabindex to control order",
+          text: "Broken focus order",
+          language: "html",
+          code: `<input type="text" tabindex="3">
+<input type="email" tabindex="1">
+<button tabindex="2">Submit</button>`,
         },
         {
           title: "Visual order ≠ DOM order",
