@@ -10,8 +10,9 @@ Additionally, the repository includes a separate test website used for conductin
 
 ```text
 .
-├── WebAble_Extension/   # Chrome browser extension (WebAble)
+├── Downloads/           # Website and extension as .zip files
 ├── Test_Website/        # Website used for user testing
+├── WebAble_Extension/   # Chrome browser extension (WebAble)
 └── README.md
 ```
 
